@@ -208,7 +208,7 @@
   background-size: cover;
   position: absolute;
   top: 50%;
-  left: 0%;
+  left: 100px;
   transform: translate(-50%);
   opacity: .4;
   transition: 1s;
@@ -216,7 +216,7 @@
 }
 
 .header__box1{
-  background-image: url(https://images.wallpaperscraft.ru/image/gory_ozero_vershiny_vid_sverkhu_119133_1920x1080.jpg);
+ background: url(../images/bgd.png);
 }
 .header__box2{
   background-image: url(https://images.wallpaperscraft.ru/image/gory_ozero_vershiny_derevya_118251_1920x1080.jpg);
