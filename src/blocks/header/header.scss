@@ -85,6 +85,7 @@
     }
 
   }
+
   // background-image: url(https://bipbap.ru/wp-content/uploads/2017/06/tmb_145037_6611.jpg);
   align-self: center;
   text-align: center;
@@ -97,7 +98,7 @@
   width: 100%;
   height: 100vh;
   min-height: 100vh;
- 
+
 
   &__info {
     margin-bottom: 5vh;
@@ -216,18 +217,23 @@
   z-index: 2;
 }
 
-.header__box1{
- background: url(../images/bgd.png);
+.header__box1 {
+  background: url(../images/bgd.png);
 }
-.header__box2{
+
+.header__box2 {
+  background-image: url(https://images.wallpaperscraft.ru/image/gory_ozero_tuman_130947_1920x1080.jpg);
+
+}
+
+.header__box3 {
+  background-image: url(https://images.wallpaperscraft.ru/image/gory_ozero_tuman_123210_1920x1080.jpg);
+}
+
+.header__box4 {
   background-image: url(https://images.wallpaperscraft.ru/image/gory_ozero_vershiny_derevya_118251_1920x1080.jpg);
 }
-.header__box3{
+
+.header__box5 {
   background-image: url(https://images.wallpaperscraft.ru/image/gory_ozero_vershiny_129263_1920x1080.jpg);
-}
-.header__box4{
-  background-image: url(https://images.wallpaperscraft.ru/image/gory_ozero_tuman_130947_1920x1080.jpg);
-}
-.header__box5{
-  background-image: url(https://images.wallpaperscraft.ru/image/gory_ozero_tuman_123210_1920x1080.jpg);
 }
