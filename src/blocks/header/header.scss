@@ -1,0 +1,87 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.block-top {
+  display: flex;
+  padding: 0 18%;
+  padding-top: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    font-size: 2.3em;
+    color: #fff;
+    vertical-align: text-bottom;
+  }
+
+  &__img {
+    width: 64px;
+    height: 54px;
+  }
+}
+
+.menu {
+  margin-right: 60px;
+  margin-left: auto;
+  flex: 1 1 645px;
+  max-width: 645px;
+  min-width: 500px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: #fff;
+
+    &:hover {
+      color: $color-brown;
+    }
+  }
+}
+
+.header-icons {
+  width: 74px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.block-main {
+  background-image: url(https://bipbap.ru/wp-content/uploads/2017/06/tmb_145037_6611.jpg);
+  align-self: center;
+  text-align: center;
+  margin-top: 27vh;
+  
+}
+
+.header-title {
+  font-size: 3.5vh;
+  font-weight: 500;
+}
+
+.header-title--strong {
+  font-size: 5vh;
+  font-weight: bold;
+  margin: 18px;
+}
+
+.header__text {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.box__info {
+  margin-bottom: 5vh;
+}
