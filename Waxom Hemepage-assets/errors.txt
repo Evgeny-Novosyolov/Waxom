@@ -1,4 +1,0 @@
-[2019-4-24 18:39:03] layer "icon1.png": Duplicate path: icon1.png
-[2019-4-24 18:39:03] layer "icon2.png": Duplicate path: icon2.png
-[2019-4-24 18:39:03] layer "icon3.png": Duplicate path: icon3.png
-[2019-4-24 18:39:03] layer "icon4.png": Duplicate path: icon4.png

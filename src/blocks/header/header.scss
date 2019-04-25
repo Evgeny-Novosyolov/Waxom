@@ -13,7 +13,7 @@
 }
 
 .block-top {
-  margin-top: 40px;
+  margin-top: 2.9em;
   display: flex;
   padding: 0 18%;
   width: 100%;
@@ -34,17 +34,17 @@
   }
 
   &__img {
-    width: 64px;
-    height: 54px;
+    width: 4.8em;
+    height: 3.9em
   }
 }
 
 .menu {
-  margin-right: 60px;
+  margin-right: 4.3em;
   margin-left: auto;
-  flex: 1 1 645px;
-  max-width: 645px;
-  min-width: 500px;
+  flex: 1 1 46em;
+  max-width: 46em;
+  min-width: 36em;
 
   &__list {
     display: flex;
@@ -61,7 +61,7 @@
 }
 
 .header-icons {
-  width: 74px;
+  width: 5.3em;
 
   ul {
     display: flex;
@@ -114,7 +114,7 @@
   &-title--strong {
     font-size: 5vh;
     font-weight: bold;
-    margin: 18px;
+    margin: 1.3em;
   }
 
   &__text {
@@ -138,9 +138,9 @@
 
 .dot {
   cursor: pointer;
-  height: 11px;
-  width: 11px;
-  margin: 0 5px;
+  height: 0.8em;
+  width: 0.8em;
+  margin: 0 0.35em;
   background-color: #999797;
   border-radius: 50%;
   display: inline-block;
@@ -148,10 +148,10 @@
 }
 
 .dot-active {
-  border: 2px solid #ad9e8f;
+  border: 0.15em solid #ad9e8f;
   background-color: transparent;
-  height: 15px;
-  width: 15px;
+  height: 1em;
+  width: 1em;
 
 }
 
@@ -160,7 +160,7 @@
   position: absolute;
   cursor: pointer;
   top: 0;
-  width: 90px;
+  width: 6.5em;
   left: 10%;
   background-color: rgba(0, 0, 0, 0);
   -webkit-transition: 0.3s;
@@ -174,14 +174,13 @@
 }
 
 .arrow-left {
-  width: 70px;
-  height: 70px;
+  width: 5em;
+  height: 5em;
   background: url(../images/left.png) center no-repeat;
   background-size: cover;
   position: absolute;
   top: 50%;
   left: 0%;
-  transform: translate(-50%);
   opacity: .4;
   transition: 1s;
   z-index: 2;
@@ -192,7 +191,7 @@
   position: absolute;
   cursor: pointer;
   top: 0;
-  width: 90px;
+  width: 6.5em;
   transition: 0.3s;
   height: 100%;
   right: 10%;
@@ -204,14 +203,13 @@
 }
 
 .next .arrow-right {
-  width: 70px;
-  height: 70px;
+  width: 5em;
+  height: 5em;
   background: url(../images/right.png) center no-repeat;
   background-size: cover;
   position: absolute;
   top: 50%;
-  left: 100px;
-  transform: translate(-50%);
+  left: 50%;
   opacity: .4;
   transition: 1s;
   z-index: 2;
