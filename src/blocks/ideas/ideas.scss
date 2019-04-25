@@ -1,0 +1,50 @@
+.ideas {
+  &-container {
+    padding: 0 18%;
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+  }
+
+  &__title {
+    font-size: 2.1em;
+    font-family: 'Raleway', sans-serif;
+    color: $color-s-gray;
+  }
+
+  &__text {
+    padding-top: 2em;
+    color: $color-gray;
+    width: 70%;
+    margin: 0 auto
+  }
+
+  &__img-wrapper {
+    margin-top: 10em;
+    position: relative;
+    width: 100%;
+    display: flex;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 770px;
+      max-height: 482px;
+    }
+  }
+
+  &__img--center {
+    position: absolute;
+    z-index: 3;
+    left: 20%;
+    bottom: 0;
+    img{
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+  }
+}
