@@ -1,0 +1,29 @@
+.separator {
+  &-container {
+    background: rgba(34, 28, 26, 1);
+    background: linear-gradient(to right, rgba(34, 28, 26, 1) 0%, rgba(57, 40, 33, 1) 49%, rgba(99, 66, 49, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#221c1a', endColorstr='#634231', GradientType=1);
+    font-family: 'Raleway', sans-serif;
+    padding: 3.5em 18%;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__title{
+    font-size: 3vh;
+    color: #fff;
+    font-weight: normal;
+    span{
+      color: $color-brown;
+    }
+  }
+  &__text{
+    color: $color-gray;
+    font-size: 1.5em;
+  }
+  &__button{
+    margin-right: 0%;
+  }
+}
