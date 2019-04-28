@@ -6,28 +6,29 @@
     justify-content: center;
     text-align: center;
     background: #fff;
-    padding-top: 7em;
-    margin-bottom: 2em;
+    padding-top: 5.5em;
+    margin-bottom: 5.5em;
   }
 
   &__title {
     font-size: 3vh;
     font-family: 'Raleway', sans-serif;
     color: $color-s-gray;
-    font-weight: bold;
+    font-weight: 600;
   }
 
   &__text {
-    padding-top: 2em;
+    padding-top: 1em;
     color: $color-s-gray;
     width: 70%;
-    margin: 0 auto
+    margin: 0 auto;
+    line-height: 2em;
   }
 
   &__tabs {
     width: 100%;
     margin: 0 auto;
-    margin-top: 2em;
+    margin-top: 2.5em;
     max-width: 604px;
     min-width: 320px;
     list-style: none;
@@ -56,19 +57,19 @@
 
   &__block {
     margin: 0 auto;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    margin-top: 1.6em;
+    margin-bottom: 2.5em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   &-box {
-    cursor: pointer;
-    margin: 1em;
+     margin: 1em;
     flex: 1 1 30%;
     max-width: 370px;
     position: relative;
+    
 
     &__links {
       width: 8em;
@@ -83,6 +84,7 @@
       float: left;
       width: 2em;
       height: 2em;
+      cursor: pointer;
 
 
       &:last-child {
@@ -113,6 +115,7 @@
       padding: 2em;
       text-align: left;
       position: relative;
+      cursor: pointer;
 
       &::before {
         position: absolute;
@@ -141,27 +144,32 @@
     &:hover {
       .project-box__info {
         background: $color-s-brown;
-
+        transition: 0.6s;
         &::before {
           border-bottom: 0.8em solid $color-s-brown;
+          transition: 0.6s;
         }
       }
 
       .project-box__links {
         display: block;
         flex-wrap: nowrap;
+        transition: 0.6s;
       }
 
       .project-box__img {
         filter: brightness(40%);
+        transition: 0.6s;
       }
 
       .project-box__title {
         color: #fff;
+        transition: 0.6s;
       }
 
       .project-box__text {
         color: $color-l-brown;
+        transition: 0.6s;
       }
     }
   }

@@ -1,0 +1,114 @@
+.device {
+  &-container {
+    padding: 5.5em 16% 0;
+  }
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  &__title {
+    margin-top: 1.8em;
+    font-size: 3vh;
+    @include font-R;
+    color: $color-s-gray;
+    font-weight: 600;
+  }
+
+  &__text {
+    width: 100%;
+    padding-top: 1.3em;
+    line-height: 1.7em;
+    @include font-MT;
+    font-weight: 500;
+    color: $color-gray;
+    font-size: 1.2em;
+  }
+
+  &__box:first-child {
+    flex: 1 1 30%;
+    max-width: 423px;
+
+    img {
+      display: block;
+      width: 100%;
+
+    }
+  }
+
+  &__box:last-child {
+    padding: 5% 4% 5% 8%;
+    flex: 1 1 65%;
+    min-width: 29em;
+
+  }
+
+  &__list-wrapper {
+    margin-top: 2em;
+    padding-left: 9%;
+    margin-left: auto;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-list__item {
+    position: relative;
+  }
+
+  &-list__title {
+    line-height: 1.9em;
+    @include font-MT;
+    font-weight: 500;
+    color: $color-gray;
+    font-size: 1.2em;
+    display: block;
+    cursor: pointer;
+    transition: 0.6s;
+    padding-left: 2.2em;
+
+    span {
+      background-image: url('../images/arrow.png');
+      background-repeat: no-repeat;
+      border-radius: 50%;
+      display: block;
+      width: 1.2em;
+      height: 1.2em;
+      left: 0;
+      top: 0.4em;
+      text-align: center;
+      position: absolute;
+    }
+
+    &:focus {
+      span{
+        transform: rotate(90deg);
+        transition: 0.6s;
+      }
+    }
+  }
+
+  &-list__text {
+    line-height: 1.3em;
+    @include font-MT;
+    font-weight: 500;
+    color: $color-gray;
+    font-size: 1em;
+    display: none;
+    padding-top: 0;
+    padding-bottom: 1.5em;
+    
+  }
+
+  &-list__text--open {
+    display: block;
+    border-bottom: 1px solid $color-l-brown;
+    border-right: 1px solid $color-l-brown;
+    border-radius: 0 0 2em 0;
+    animation: animationFrames 0.8s ease 0s 1 alternate;
+  }
+}

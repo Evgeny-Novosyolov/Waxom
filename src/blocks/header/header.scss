@@ -74,7 +74,7 @@
 
 }
 
-.box {
+.header-box {
   &__img {
     position: absolute;
     z-index: -1;
@@ -106,12 +106,12 @@
     z-index: 2;
   }
 
-  &-title {
+  &__title {
     font-size: 3.5vh;
     font-weight: 500;
   }
 
-  &-title--strong {
+  &__title--strong {
     font-size: 5vh;
     font-weight: bold;
     margin: 1.3em;

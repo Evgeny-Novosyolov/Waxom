@@ -1,53 +1,63 @@
-let sliderIndex = 1,
-  slides = document.querySelectorAll('.content-item'),
-  prev = document.querySelector('.prev'),
-  next = document.querySelector('.next'),
-  dotsWrap = document.querySelector('.dots__list'),
-  dots = document.querySelectorAll('.dot');
+/*jshint esversion: 6 */
+window.addEventListener('DOMContentLoaded', function () {
 
-showSlides(sliderIndex);
 
-function showSlides(n) {
+  'use strict';
 
-  if (n > slides.length) {
-    sliderIndex = 1;
-  }
+  (function () {
 
-  if (n < 1) {
-    sliderIndex = slides.length;
-  }
+    let sliderIndex = 1,
+      slides = document.querySelectorAll('.content-item'),
+      prev = document.querySelector('.prev'),
+      next = document.querySelector('.next'),
+      dotsWrap = document.querySelector('.dots__list'),
+      dots = document.querySelectorAll('.dot');
 
-  slides.forEach((item) => item.style.display = 'none');
-  // for (let i = 0; i < slider.length; i++){
-  //   slider[i].style.display = 'none';
-  // };
+    showSlides(sliderIndex);
 
-  dots.forEach((item) => item.classList.remove('dot-active'));
+    function showSlides(n) {
 
-  slides[sliderIndex - 1].style.display = 'block';
-  dots[sliderIndex - 1].classList.add('dot-active');
-}
+      if (n > slides.length) {
+        sliderIndex = 1;
+      }
 
-function plusSlides(n) {
-  showSlides(sliderIndex += n);
-}
+      if (n < 1) {
+        sliderIndex = slides.length;
+      }
 
-function currentSlide(n) {
-  showSlides(sliderIndex = n);
-}
+      slides.forEach((item) => item.style.display = 'none');
+      // for (let i = 0; i < slider.length; i++){
+      //   slider[i].style.display = 'none';
+      // };
 
-prev.addEventListener('click', function () {
-  plusSlides(-1);
-});
+      dots.forEach((item) => item.classList.remove('dot-active'));
 
-next.addEventListener('click', function () {
-  plusSlides(1);
-});
+      slides[sliderIndex - 1].style.display = 'block';
+      dots[sliderIndex - 1].classList.add('dot-active');
+    }
 
-dotsWrap.addEventListener('click', function () {
-  for (let i = 0; i < dots.length + 1; i++) {
-    if (event.target.classList.contains('dot') && event.target == dots[i - 1]) {
-      currentSlide(i);
-    };
-  };
+    function plusSlides(n) {
+      showSlides(sliderIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(sliderIndex = n);
+    }
+
+    prev.addEventListener('click', function () {
+      plusSlides(-1);
+    });
+
+    next.addEventListener('click', function () {
+      plusSlides(1);
+    });
+
+    dotsWrap.addEventListener('click', function () {
+      for (let i = 0; i < dots.length + 1; i++) {
+        if (event.target.classList.contains('dot') && event.target == dots[i - 1]) {
+          currentSlide(i);
+        };
+      };
+    });
+  }());
 });
