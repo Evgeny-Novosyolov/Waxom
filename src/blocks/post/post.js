@@ -3,16 +3,16 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
   'use strict';
-
-      let sliderIndex = 1,
+  (function () {
+    let sliderIndex = 1,
       sliderIndexTwo = 2,
-       sliderIndexThree = 3,
+      sliderIndexThree = 3,
       slidesItem = document.querySelectorAll('.post__item'),
       // slidesitem = document.querySelectorAll('.slider-item'),
       prev = document.querySelector('.post__button--prev'),
       next = document.querySelector('.post__button--next');
 
-    
+
     showSlides(sliderIndex);
 
     function showSlides(n) {
@@ -26,8 +26,9 @@ window.addEventListener('DOMContentLoaded', function () {
       slidesItem[sliderIndex - 1].classList.add('post__item--left');
     }
 
-   
+
     showSlidesTwo(sliderIndexTwo);
+
     function showSlidesTwo(n) {
       if (n > slidesItem.length) {
         sliderIndexTwo = 1;
@@ -37,20 +38,21 @@ window.addEventListener('DOMContentLoaded', function () {
       }
       slidesItem.forEach((item) => item.classList.remove('post__item--center'));
       slidesItem[sliderIndexTwo - 1].classList.add('post__item--center');
-    //   function showitem() {
-    //   for (let i = 0; i < slidesItem.length; i++) {
-    //     if (slidesItem[i].classList.contains('post__item--open')){
-    //      slidesitem.forEach((item) => item.classList.remove('post__item--openn'));
-    //      slidesitem[i].classList.add('slider-item--open');
-    //     }
-    //   }
+      //   function showitem() {
+      //   for (let i = 0; i < slidesItem.length; i++) {
+      //     if (slidesItem[i].classList.contains('post__item--open')){
+      //      slidesitem.forEach((item) => item.classList.remove('post__item--openn'));
+      //      slidesitem[i].classList.add('slider-item--open');
+      //     }
+      //   }
 
-    // }
-    // showitem();       
+      // }
+      // showitem();       
     }
 
-    
+
     showSlidesThree(sliderIndexThree);
+
     function showSlidesThree(n) {
       if (n > slidesItem.length) {
         sliderIndexThree = 1;
@@ -59,7 +61,7 @@ window.addEventListener('DOMContentLoaded', function () {
         sliderIndexThree = slidesItem.length;
       }
       slidesItem.forEach((item) => item.classList.remove('post__item--right'));
-       slidesItem[sliderIndexThree - 1].classList.add('post__item--right');
+      slidesItem[sliderIndexThree - 1].classList.add('post__item--right');
     }
 
 
@@ -86,6 +88,7 @@ window.addEventListener('DOMContentLoaded', function () {
     next.addEventListener('click', function () {
       plusSlides(1);
     });
+  }());
 
-  });
 
+});
