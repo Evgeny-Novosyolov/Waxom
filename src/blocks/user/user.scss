@@ -13,7 +13,6 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 4.5em;
-    margin-bottom: 3.5em;
   }
 }
 
@@ -89,36 +88,41 @@
     padding: 0 16%;
   }
 }
+
 @media screen and (max-width: 1430px) {
   .user-container {
     padding: 0 8%;
   }
 }
+
 @media screen and (max-width: 1430px) {
   .user-container {
     padding: 0 8%;
   }
 }
+
 @media screen and (max-width: 1100px) {
-  .user__box{
+  .user__box {
     max-width: 140px;
   }
 }
+
 @media screen and (max-width: 900px) {
   .user-container {
     padding: 0 4%;
   }
-  
-  .user__box{
+
+  .user__box {
     max-width: 140px;
   }
 }
+
 @media screen and (max-width: 840px) {
   .user-container {
     padding: 0 4%;
   }
-  
-  .user__box{
+
+  .user__box {
     max-width: 190px;
   }
 }
