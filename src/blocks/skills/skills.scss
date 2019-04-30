@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 7em;
-    margin-bottom: 3.5em;
+    padding-bottom: 3.5em;
   }
 }
 
@@ -23,7 +23,7 @@
     text-align: center;
     position: relative;
     flex: 1 1 20%;
-    min-width: 200px;
+    min-width: 14em;
     margin: 0.5em;
     transition: 0.6s;
 
@@ -70,3 +70,19 @@
     color: $color-gray;
   }
 }
+
+@media screen and (max-width: 1600px){
+  .skills-container {
+      font-size: 13px;
+      padding: 0 14%;
+}}
+@media screen and (max-width: 1100px){
+  .skills-container {
+      font-size: 13px;
+      padding: 0 4%;
+}}
+@media screen and (max-width: 720px){
+  .skills-container {
+      font-size: 13px;
+      padding: 0 2%;
+}}

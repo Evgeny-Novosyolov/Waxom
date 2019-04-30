@@ -40,23 +40,46 @@
 }
 
 .menu {
-  margin-right: 4.3em;
+  margin-right: 5%;
   margin-left: auto;
   flex: 1 1 46em;
   max-width: 46em;
-  min-width: 36em;
+  min-width: 8em;
 
   &__list {
+    margin-left: 0.5em;
     display: flex;
     justify-content: space-between;
   }
-
+  &_item{
+    text-align: center;
+  }
   &__link {
     color: #fff;
+    line-height: 2em;
 
     &:hover {
       color: $color-brown;
     }
+  }
+
+  &>ul li {
+    position: relative;
+  }
+
+
+
+
+  & [type="checkbox"],
+  & label.toggleSubmenu {
+    display: none;
+  }
+
+  & label.toggleMenu {
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
   }
 }
 
@@ -214,7 +237,9 @@
   transition: 1s;
   z-index: 2;
 }
-
+.header-close{
+  opacity: 0;
+}
 .header__box1 {
   background: url(../images/bgd.png);
 }
@@ -235,3 +260,115 @@
 .header__box5 {
   background-image: url(https://images.wallpaperscraft.ru/image/gory_ozero_vershiny_129263_1920x1080.jpg);
 }
+
+@media screen and (max-width: 1400px) {
+  .menu {
+    font-size: 12px;
+  }
+
+  .block-top {
+    margin-top: 2.9em;
+    display: flex;
+    padding: 0 8%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .menu {
+    font-size: 13px;
+  }
+
+  .block-top {
+    margin-top: 2.9em;
+    display: flex;
+    padding: 0 2%;
+  }
+  .dot {
+    cursor: pointer;
+    height: 1.2em;
+    width: 1.2em;
+    margin: 0 0.8em;
+    background-color: #999797;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .dot-active {
+    border: 1em solid #ad9e8f;
+    background-color: transparent;
+    height: 1em;
+    width: 1em;
+  
+  }
+}
+@media screen and (max-width:720px) {
+  .header-box__text{
+    width: 50%;
+  }
+  .header-icons ul{
+    flex-direction: column;
+  }
+  .menu {
+    overflow: hidden;
+  }
+
+  .menu ul {
+    display: block;
+    max-height: 0;
+    transition: max-height 0.3s;
+  }
+   .menu li:hover>ul {
+    display: none;
+
+  }
+
+  // .menu li>ul li ul {
+  //   position: absolute;
+  //   right: auto;
+  //   top: auto;
+  // }
+  .menu label.toggleMenu {
+    padding: 5px;
+    display: block;
+  }
+
+  input.toggleMenu:checked+label.toggleMenu {
+    background: #959595;
+    color: #fff;
+    
+  }
+
+  input.toggleMenu:checked~ul,
+  input.toggleSubmenu:checked~ul {
+    display: block;
+    position: relative;
+    max-height: 5000px;
+    transition: max-height 2s ease-in;
+  }
+
+  .menu label.toggleSubmenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: block;
+
+    
+  }
+
+  // input.toggleSubmenu:checked~a {
+  //   background: #454547;
+  //   color: #fff;
+
+  //   &:hover {
+  //     text-decoration: underline;
+  //   }
+  // }
+  .header-box__info{
+    margin-top: 24vh ;
+  }
+  
+
+}
+

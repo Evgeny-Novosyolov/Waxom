@@ -60,4 +60,16 @@ window.addEventListener('DOMContentLoaded', function () {
       };
     });
   }());
+
+  let toggleMenu = document.querySelector('.toggleMenu'),
+    boxInfo = document.querySelectorAll('.header-box__info');
+
+
+  toggleMenu.addEventListener('click', function () {
+    boxInfo.forEach((item) => item.classList.toggle("header-close"));
+  });
+
+
+
+
 });

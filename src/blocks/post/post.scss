@@ -1,13 +1,13 @@
 .post {
   &-container {
-    padding: 0 16%;
+    padding: 5.5em 16% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background: #fff;
-    padding-top: 5.5em;
-     }
+
+  }
 
   &__title {
     font-size: 3vh;
@@ -56,6 +56,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
   }
 
@@ -101,7 +102,9 @@
     }
 
     &__img {
+      display: flex;
       img {
+        flex-grow: 1;
         display: block;
         max-width: 100%;
       }
@@ -242,16 +245,23 @@
   }
 }
 
+
+
+
 @media screen and (max-width: 1600px) {
   .post-container {
-    padding: 0 10%;
+    font-size: 13px;
+    padding: 2em 8% 0;
   }
 }
 
+
 @media screen and (max-width: 1050px) {
   .post-container {
-    padding: 0 2%;
+    font-size: 14px;
+    padding: 1em 4% 0;
   }
+
 
   .post__item--center,
   .post__item--left,
@@ -260,11 +270,14 @@
   }
 }
 
+
 @media screen and (max-width: 800px) {
+  .post-container {
+    padding: 1em 2% 0;
+  }
 
   .post__list {
     width: 100%;
-    height: 100;
     // position: relative;
     display: flex;
     // flex-wrap: wrap;
@@ -273,33 +286,68 @@
 
   .post-box {
     display: flex;
-    width: 100%;
+    width: 90%;
   }
+
   .post__item--center,
   .post__item--left,
   .post__item--right {
-    width: 100%;
+    width: 90%;
   }
-  .post-box__info{
+
+  .post-box__info {
     padding: 2%;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .post-box{
-    font-size: 10px;
+
+@media screen and (max-width: 570px) {
+  .post-container {
+    font-size: 14px;
   }
 
+  .post__button--prev {
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+  }
 }
-@media screen and (max-width: 444px) {
-  .post-box{
-    font-size: 9px;
+
+@media screen and (max-width: 500px) {
+  .dot-active {
+    border: 0.15em solid #ad9e8f;
+    background-color: transparent;
+    height: 1em;
+    width: 1em;
   }
 
-}
-@media screen and (max-width: 370px) {
-  .post-box{
-    font-size: 8px;
+  .post__list {
+    
+    // position: relative;
+    display: flex;
+    // flex-wrap: wrap;
+    flex-direction: row;
   }
 
+  .post-box {
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  .post__item--left,
+  .post__item--right {
+   display: none;
+  }
+
+  .post-box__info {
+    padding: 2%;
+  }
 }
+
+
+
+
+
+
+

@@ -1,13 +1,12 @@
 .project {
   &-container {
-    padding: 0 16%;
+    padding: 5.5em 016%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background: #fff;
-    padding-top: 5.5em;
-    margin-bottom: 5.5em;
+
   }
 
   &__title {
@@ -65,11 +64,12 @@
   }
 
   &-box {
-     margin: 1em;
+    margin: 1em;
     flex: 1 1 30%;
     max-width: 370px;
+    min-width: 180px;
     position: relative;
-    
+
 
     &__links {
       width: 8em;
@@ -145,6 +145,7 @@
       .project-box__info {
         background: $color-s-brown;
         transition: 0.6s;
+
         &::before {
           border-bottom: 0.8em solid $color-s-brown;
           transition: 0.6s;
@@ -173,34 +174,55 @@
       }
     }
   }
-  .none{
+
+  .none {
     display: none;
   }
 }
 
-.element-animation{
+.element-animation {
   animation: animationFrames ease 1s;
   animation-iteration-count: 0;
   transform-origin: 50% 50%;
-  animation-fill-mode:forwards; /*when the spec is finished*/
+  animation-fill-mode: forwards;
+  /*when the spec is finished*/
   -webkit-animation: animationFrames ease 1s;
   -webkit-animation-iteration-count: 1;
   -webkit-transform-origin: 50% 50%;
-  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
   -moz-animation: animationFrames ease 1s;
   -moz-animation-iteration-count: 1;
   -moz-transform-origin: 50% 50%;
-  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -moz-animation-fill-mode: forwards;
+  /*FF 5+*/
   -o-animation: animationFrames ease 1s;
   -o-animation-iteration-count: 1;
   -o-transform-origin: 50% 50%;
-  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+  -o-animation-fill-mode: forwards;
+  /*Not implemented yet*/
   -ms-animation: animationFrames ease 1s;
   -ms-animation-iteration-count: 1;
   -ms-transform-origin: 50% 50%;
-  -ms-animation-fill-mode:forwards; /*IE 10+*/
+  -ms-animation-fill-mode: forwards;
+  /*IE 10+*/
 }
+
 .show {
   animation: show 0.8s ease 0s 1 alternate;
-  
+
+}
+
+@media screen and (max-width: 1000px) {
+  .project-container {
+    padding: 2.5em 8%;
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .project-container {
+    padding: 1.5em 2%;
+
+  }
 }

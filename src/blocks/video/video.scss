@@ -30,10 +30,12 @@
     margin: 0 auto;
     border-radius: 50%;
     transition: 1s;
-    &:hover{
+
+    &:hover {
       background: #3f4044f6;
       transform: scale(.8);
     }
+
     img {
       display: block;
       width: 100%;
@@ -41,9 +43,9 @@
   }
 
   &__info {
-    padding-top: 22vh;
+    padding: 22vh 0;
     // position: absolute;
-    padding-bottom: 23vh;
+
   }
 
   &__title {
@@ -69,5 +71,16 @@
     margin-top: 4em;
     color: $color-l-brown;
     font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .video__info {
+    padding: 13vh 0;
+  }
+}
+@media screen and (max-width: 720px) {
+  .video__info {
+    padding: 7vh 0;
   }
 }

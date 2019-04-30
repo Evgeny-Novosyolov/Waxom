@@ -47,7 +47,7 @@
 
   &__list-wrapper {
     margin-top: 2em;
-    padding-left: 9%;
+    padding-left: 8%;
     margin-left: auto;
   }
 
@@ -76,8 +76,8 @@
       background-repeat: no-repeat;
       border-radius: 50%;
       display: block;
-      width: 1.2em;
-      height: 1.2em;
+      width: 19px;
+      height: 19px;
       left: 0;
       top: 0.4em;
       text-align: center;
@@ -85,7 +85,7 @@
     }
 
     &:focus {
-      span{
+      span {
         transform: rotate(90deg);
         transition: 0.6s;
       }
@@ -101,7 +101,7 @@
     display: none;
     padding-top: 0;
     padding-bottom: 1.5em;
-    
+
   }
 
   &-list__text--open {
@@ -111,4 +111,29 @@
     border-radius: 0 0 2em 0;
     animation: animationFrames 0.8s ease 0s 1 alternate;
   }
+}
+
+@media screen and (max-width: 1000px) {
+  .device-container {
+    font-size: 12px;
+    padding: 2.5em 8% 0;
+  }
+
+  .device__box:last-child {
+    padding: 2% 2% 2% 4%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .device-container {
+    font-size: 12px;
+    padding: 1.5em 2% 0;
+  }
+  .device__block{
+    flex-direction: column;
+  }
+
+  .device__box:last-child {
+    padding: 1% 1% 1% 2%;
+  }
+
 }

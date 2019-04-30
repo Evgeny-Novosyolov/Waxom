@@ -18,3 +18,16 @@
     border-bottom: 0.3em solid #6e472a;
   }
 }
+
+@media screen and (max-width: 1000px){
+  .button{
+    font-size: 10px;
+  }
+   
+}
+@media screen and (max-width: 720px){
+  .button{
+    font-size: 9px;
+  }
+   
+}

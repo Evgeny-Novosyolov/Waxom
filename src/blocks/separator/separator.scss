@@ -27,3 +27,19 @@
     margin-right: 0%;
   }
 }
+
+
+
+
+@media screen and (max-width: 1000px){
+  .separator-container {
+    padding: 1.5em 8%;
+    font-size: 13px;
+}
+}
+@media screen and (max-width: 720px){
+  .separator-container {
+    padding: 1em 2%;
+    font-size: 11px;
+}
+}
