@@ -56,8 +56,8 @@ window.addEventListener('DOMContentLoaded', function () {
       for (let i = 0; i < dots.length + 1; i++) {
         if (event.target.classList.contains('dot') && event.target == dots[i - 1]) {
           currentSlide(i);
-        };
-      };
+        }
+      }
     });
   }());
 
@@ -68,8 +68,6 @@ window.addEventListener('DOMContentLoaded', function () {
   toggleMenu.addEventListener('click', function () {
     boxInfo.forEach((item) => item.classList.toggle("header-close"));
   });
-
-
 
 
 });

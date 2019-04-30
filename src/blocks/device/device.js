@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function () {
           divText.forEach((item) => item.classList.remove('device-list__text--open'));
           divText[i].classList.add('device-list__text--open');
         };
-      };
+      }
 
     }
     showDevice();

@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   (function () {
 
-    var tab = document.querySelectorAll('.project__link'),
+    let tab = document.querySelectorAll('.project__link'),
       filterOneAll = document.querySelectorAll('.project__block > div:not(.filterOne)'),
       filterOne = document.querySelectorAll('.filterOne'),
       filterTwoAll = document.querySelectorAll('.project__block > div:not(.filterTwo)'),
@@ -20,23 +20,23 @@ window.addEventListener('DOMContentLoaded', function () {
 
     tab[1].addEventListener('click', function () {
       let all = filterOneAll,
-        e = filterOne;
-      if (e[0].classList.contains('none')) {
+        elem = filterOne;
+      if (elem[0].classList.contains('none')) {
         all.forEach((item) => item.classList.add('show'));
-        e.forEach((item) => item.classList.remove('none'));
-        e.forEach((item) => item.classList.add('element-animation'));
-
-        function funcOne() {
-          e.forEach((item) => item.classList.remove('element-animation'));
+         elem.forEach((item) => item.classList.remove('none'));
+         elem.forEach((item) => item.classList.add('element-animation'));
+        
+        let  funcOne = function() {
+           elem.forEach((item) => item.classList.remove('element-animation'));
           all.forEach((item) => item.classList.add('none'));
-        }
+        };
         setTimeout(funcOne, 800);
 
       } else {
         all.forEach((item) => item.classList.add('show'));
-        e.forEach((item) => item.classList.remove('none'));
+         elem.forEach((item) => item.classList.remove('none'));
 
-        function funcTwo() {
+        let  funcTwo = function() {
           all.forEach((item) => item.classList.remove('show'));
           all.forEach((item) => item.classList.add('none'));
         };
@@ -56,24 +56,24 @@ window.addEventListener('DOMContentLoaded', function () {
 
     tab[2].addEventListener('click', function () {
       let all = filterTwoAll,
-        e = filterTwo;
+         elem = filterTwo;
 
-      if (e[0].classList.contains('none')) {
+      if (elem[0].classList.contains('none')) {
         all.forEach((item) => item.classList.add('show'));
-        e.forEach((item) => item.classList.remove('none'));
-        e.forEach((item) => item.classList.add('element-animation'));
+         elem.forEach((item) => item.classList.remove('none'));
+         elem.forEach((item) => item.classList.add('element-animation'));
 
-        function funcOne() {
-          e.forEach((item) => item.classList.remove('element-animation'));
+        let funcOne = function() {
+           elem.forEach((item) => item.classList.remove('element-animation'));
           all.forEach((item) => item.classList.add('none'));
-        }
+        };
         setTimeout(funcOne, 800);
 
       } else {
         all.forEach((item) => item.classList.add('show'));
-        e.forEach((item) => item.classList.remove('none'));
+         elem.forEach((item) => item.classList.remove('none'));
 
-        function funcTwo() {
+        let  funcTwo = function() {
           all.forEach((item) => item.classList.remove('show'));
           all.forEach((item) => item.classList.add('none'));
         };
@@ -89,24 +89,24 @@ window.addEventListener('DOMContentLoaded', function () {
 
     tab[3].addEventListener('click', function () {
       let all = filterThreeAll,
-        e = filterThree;
+         elem = filterThree;
 
-      if (e[0].classList.contains('none')) {
+      if (elem[0].classList.contains('none')) {
         all.forEach((item) => item.classList.add('show'));
-        e.forEach((item) => item.classList.remove('none'));
-        e.forEach((item) => item.classList.add('element-animation'));
+         elem.forEach((item) => item.classList.remove('none'));
+         elem.forEach((item) => item.classList.add('element-animation'));
 
-        function funcOne() {
-          e.forEach((item) => item.classList.remove('element-animation'));
+        let  funcOne = function() {
+           elem.forEach((item) => item.classList.remove('element-animation'));
           all.forEach((item) => item.classList.add('none'));
-        }
+        };
         setTimeout(funcOne, 800);
 
       } else {
         all.forEach((item) => item.classList.add('show'));
-        e.forEach((item) => item.classList.remove('none'));
+         elem.forEach((item) => item.classList.remove('none'));
 
-        function funcTwo() {
+        let funcTwo = function() {
           all.forEach((item) => item.classList.remove('show'));
           all.forEach((item) => item.classList.add('none'));
         };
@@ -121,24 +121,24 @@ window.addEventListener('DOMContentLoaded', function () {
 
     tab[4].addEventListener('click', function () {
       let all = filterFourthAll,
-        e = filterFourth;
+         elem = filterFourth;
 
-      if (e[0].classList.contains('none')) {
+      if (elem[0].classList.contains('none')) {
         all.forEach((item) => item.classList.add('show'));
-        e.forEach((item) => item.classList.remove('none'));
-        e.forEach((item) => item.classList.add('element-animation'));
+         elem.forEach((item) => item.classList.remove('none'));
+         elem.forEach((item) => item.classList.add('element-animation'));
 
-        function funcOne() {
-          e.forEach((item) => item.classList.remove('element-animation'));
+        let funcOne = function() {
+           elem.forEach((item) => item.classList.remove('element-animation'));
           all.forEach((item) => item.classList.add('none'));
-        }
+        };
         setTimeout(funcOne, 800);
 
       } else {
         all.forEach((item) => item.classList.add('show'));
-        e.forEach((item) => item.classList.remove('none'));
+         elem.forEach((item) => item.classList.remove('none'));
 
-        function funcTwo() {
+        let funcTwo = function() {
           all.forEach((item) => item.classList.remove('show'));
           all.forEach((item) => item.classList.add('none'));
         };
@@ -160,10 +160,6 @@ window.addEventListener('DOMContentLoaded', function () {
       }
       setTimeout(func, 800);
     });
-
-
-
   }());
-
 
 });

@@ -137,6 +137,13 @@
       max-width: 100%;
     }
   }
+  .text-hidden{
+    display: none;
+   
+  }
+  .text-hidden--open{
+    animation: animationFrames 0.8s ease 0s 1 alternate;
+  }
 }
 
 @media screen and (max-width: 1800px) {

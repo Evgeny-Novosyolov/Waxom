@@ -15,31 +15,40 @@ const webpack = require('webpack-stream');
 
 const cssFiles = [
   'src/styles/main.scss'
- 
+
 ];
 const htmlFiles = [
   'src/views/index.html'
- 
+
 ];
 
-let webConfig={
-output: {
-  filename: 'all.js'
-}
+let webConfig = {
+  output: {
+    filename: 'all.js'
+  },
+  module: {
+    rules: [
+      {
+      test: /\.js$/,
+      loader: 'babel-loader',
+      exclude: '/node_modules/'
+    }
+  ]
+  }
 };
 
 function html() {
   return gulp.src(htmlFiles) //Выберем файлы по нужному пути
-      .pipe(rigger()) //Прогоним через rigger
-      .pipe(gulp.dest('build/')) //выгрузим их в папку build
-      .pipe(browserSync.stream()); //И перезагрузим наш сервер для обновлений
-};
+    .pipe(rigger()) //Прогоним через rigger
+    .pipe(gulp.dest('build/')) //выгрузим их в папку build
+    .pipe(browserSync.stream()); //И перезагрузим наш сервер для обновлений
+}
 
 
 function styles() {
   return gulp.src(cssFiles)
-  .pipe(sourcemaps.init())
-  .pipe(sass())
+    .pipe(sourcemaps.init())
+    .pipe(sass())
     .pipe(concat('style.css'))
     .pipe(autoprefixer({
       browsers: ['>0.1%'],
@@ -52,7 +61,6 @@ function styles() {
     .pipe(gulp.dest('build/css'))
 
     .pipe(browserSync.stream());
-
 }
 
 
@@ -60,7 +68,7 @@ function styles() {
 function scripts() {
   return gulp.src('src/js/index.js')
     .pipe(webpack(webConfig))
-    
+
 
     .pipe(gulp.dest('build/js'))
     .pipe(browserSync.stream());
@@ -68,15 +76,17 @@ function scripts() {
 }
 
 
-function imgs(){
+function imgs() {
   return gulp.src('src/images/*.+(jpg|jpeg|png|gif)')
-      .pipe(imagemin({
-          progressive: true,
-          svgoPlugins: [{ removeViewBox: false }],
-          interlaced: true
-      }))
-      .pipe(gulp.dest('build/images'))
-};
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{
+        removeViewBox: false
+      }],
+      interlaced: true
+    }))
+    .pipe(gulp.dest('build/images'))
+}
 
 
 function clean() {
@@ -93,13 +103,13 @@ function watch() {
     },
     tunnel: true
   })
- gulp.watch('src/**/*.html', html)
+  gulp.watch('src/**/*.html', html)
   gulp.watch('src/**/*.css', styles)
   gulp.watch('src/**/*.scss', styles)
 
   gulp.watch('src/**/*.js', scripts)
 
-   gulp.watch("./src/**/*.html").on('change', browserSync.reload);
+  gulp.watch("./src/**/*.html").on('change', browserSync.reload);
 }
 
 
@@ -115,7 +125,7 @@ gulp.task('del', clean);
 
 gulp.task('watch', watch);
 
-let build = gulp.series(clean, 
+let build = gulp.series(clean,
   gulp.parallel(html, styles, scripts, imgs));
 
 gulp.task('build', build);
