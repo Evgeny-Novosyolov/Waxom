@@ -223,14 +223,14 @@
   &__item--center {
     display: block;
     // width: 100%;
-    animation: show 0.8s ease 0s 1 alternate;
+    animation: zoomOutDown 0.8s ease 0s 1 alternate;
     position: relative;
     margin: 1em;
   }
 
   &__item--left {
     display: block;
-    animation: show 0.8s ease 0s 1 alternate;
+    animation: zoomOutDown 0.8s ease 0s 1 alternate;
     position: relative;
     margin: 1em;
     // width: 100%;
@@ -238,7 +238,7 @@
 
   &__item--right {
     display: block;
-    animation: show 0.8s ease 0s 1 alternate;
+    animation: zoomOutDown 0.8s ease 0s 1 alternate;
     position: relative;
     margin: 1em;
     // width: 100%;

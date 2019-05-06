@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', function () {
       let all = filterOneAll,
         elem = filterOne;
       if (elem[0].classList.contains('none')) {
-        all.forEach((item) => item.classList.add('show'));
+        all.forEach((item) => item.classList.add('zoomOutDown'));
          elem.forEach((item) => item.classList.remove('none'));
          elem.forEach((item) => item.classList.add('element-animation'));
         
@@ -33,18 +33,18 @@ window.addEventListener('DOMContentLoaded', function () {
         setTimeout(funcOne, 800);
 
       } else {
-        all.forEach((item) => item.classList.add('show'));
+        all.forEach((item) => item.classList.add('zoomOutDown'));
          elem.forEach((item) => item.classList.remove('none'));
 
         let  funcTwo = function() {
-          all.forEach((item) => item.classList.remove('show'));
+          all.forEach((item) => item.classList.remove('zoomOutDown'));
           all.forEach((item) => item.classList.add('none'));
         };
         setTimeout(funcTwo, 800);
       }
 
       function funcThree() {
-        all.forEach((item) => item.classList.remove('show'));
+        all.forEach((item) => item.classList.remove('zoomOutDown'));
       }
       setTimeout(funcThree, 800);
     });
@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', function () {
          elem = filterTwo;
 
       if (elem[0].classList.contains('none')) {
-        all.forEach((item) => item.classList.add('show'));
+        all.forEach((item) => item.classList.add('zoomOutDown'));
          elem.forEach((item) => item.classList.remove('none'));
          elem.forEach((item) => item.classList.add('element-animation'));
 
@@ -70,18 +70,18 @@ window.addEventListener('DOMContentLoaded', function () {
         setTimeout(funcOne, 800);
 
       } else {
-        all.forEach((item) => item.classList.add('show'));
+        all.forEach((item) => item.classList.add('zoomOutDown'));
          elem.forEach((item) => item.classList.remove('none'));
 
         let  funcTwo = function() {
-          all.forEach((item) => item.classList.remove('show'));
+          all.forEach((item) => item.classList.remove('zoomOutDown'));
           all.forEach((item) => item.classList.add('none'));
         };
         setTimeout(funcTwo, 800);
       }
 
       function funcThree() {
-        all.forEach((item) => item.classList.remove('show'));
+        all.forEach((item) => item.classList.remove('zoomOutDown'));
       }
       setTimeout(funcThree, 800);
     });
@@ -92,7 +92,7 @@ window.addEventListener('DOMContentLoaded', function () {
          elem = filterThree;
 
       if (elem[0].classList.contains('none')) {
-        all.forEach((item) => item.classList.add('show'));
+        all.forEach((item) => item.classList.add('zoomOutDown'));
          elem.forEach((item) => item.classList.remove('none'));
          elem.forEach((item) => item.classList.add('element-animation'));
 
@@ -103,18 +103,18 @@ window.addEventListener('DOMContentLoaded', function () {
         setTimeout(funcOne, 800);
 
       } else {
-        all.forEach((item) => item.classList.add('show'));
+        all.forEach((item) => item.classList.add('zoomOutDown'));
          elem.forEach((item) => item.classList.remove('none'));
 
         let funcTwo = function() {
-          all.forEach((item) => item.classList.remove('show'));
+          all.forEach((item) => item.classList.remove('zoomOutDown'));
           all.forEach((item) => item.classList.add('none'));
         };
         setTimeout(funcTwo, 800);
       }
 
       function funcThree() {
-        all.forEach((item) => item.classList.remove('show'));
+        all.forEach((item) => item.classList.remove('zoomOutDown'));
       }
       setTimeout(funcThree, 800);
     });
@@ -124,7 +124,7 @@ window.addEventListener('DOMContentLoaded', function () {
          elem = filterFourth;
 
       if (elem[0].classList.contains('none')) {
-        all.forEach((item) => item.classList.add('show'));
+        all.forEach((item) => item.classList.add('zoomOutDown'));
          elem.forEach((item) => item.classList.remove('none'));
          elem.forEach((item) => item.classList.add('element-animation'));
 
@@ -135,18 +135,18 @@ window.addEventListener('DOMContentLoaded', function () {
         setTimeout(funcOne, 800);
 
       } else {
-        all.forEach((item) => item.classList.add('show'));
+        all.forEach((item) => item.classList.add('zoomOutDown'));
          elem.forEach((item) => item.classList.remove('none'));
 
         let funcTwo = function() {
-          all.forEach((item) => item.classList.remove('show'));
+          all.forEach((item) => item.classList.remove('zoomOutDown'));
           all.forEach((item) => item.classList.add('none'));
         };
         setTimeout(funcTwo, 800);
       }
 
       function funcThree() {
-        all.forEach((item) => item.classList.remove('show'));
+        all.forEach((item) => item.classList.remove('zoomOutDown'));
       }
       setTimeout(funcThree, 800);
     });

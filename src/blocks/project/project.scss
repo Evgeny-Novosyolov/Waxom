@@ -52,6 +52,11 @@
       background: $color-brown;
       color: #fff;
     }
+
+    &:focus {
+      background: $color-brown;
+      color: #fff;
+    }
   }
 
   &__block {
@@ -208,10 +213,13 @@
   /*IE 10+*/
 }
 
-.show {
-  animation: show 0.8s ease 0s 1 alternate;
-
+// .show {
+//   animation: show 0.8s ease 0s 1 alternate;
+// }
+ .zoomOutDown {
+  animation: zoomOutDown 0.8s ease 0s 1 alternate;
 }
+
 
 @media screen and (max-width: 1000px) {
   .project-container {

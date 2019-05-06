@@ -279,7 +279,7 @@
 
 @media screen and (max-width: 900px) {
   .menu {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .block-top {
@@ -313,8 +313,12 @@
     width: 50%;
   }
 
-  .header-icons ul {
-    flex-direction: column;
+  .header-icons ul  {
+    margin-right: 1em;
+    width: 30%;
+  }
+  .header-icons ul li {
+    margin: 1em;
   }
 
   .menu {
@@ -338,35 +342,36 @@
   //   top: auto;
   // }
   .menu label.toggleMenu {
-    padding: 5px;
+    margin-top: 0.4em;
+    padding: 0.35em;
     display: block;
   }
 
-  input.toggleMenu:checked+label.toggleMenu {
-    background: #959595;
-    color: #fff;
+  // input.toggleMenu:checked+label.toggleMenu {
+  //   background: #959595;
+  //   color: #fff;
 
-  }
+  // }
 
   input.toggleMenu:checked~ul,
   input.toggleSubmenu:checked~ul {
     display: block;
-    position: relative;
+    position: absolute;
     max-height: 5000px;
     transition: max-height 2s ease-in;
   }
 
-  .menu label.toggleSubmenu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    display: block;
+  // .menu label.toggleSubmenu {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   cursor: pointer;
+  //   display: block;
 
 
-  }
+  // }
 
   // input.toggleSubmenu:checked~a {
   //   background: #454547;
