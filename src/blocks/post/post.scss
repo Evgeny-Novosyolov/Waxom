@@ -104,6 +104,7 @@
 
     &__img {
       display: flex;
+
       img {
         flex-grow: 1;
         display: block;
@@ -131,7 +132,6 @@
 
     &__text {
       color: $color-gray;
-
     }
 
     &__button {
@@ -297,6 +297,7 @@
 
   .post-box__info {
     padding: 2%;
+
   }
 }
 
@@ -322,7 +323,7 @@
   }
 
   .post__list {
-    
+
     // position: relative;
     display: flex;
     // flex-wrap: wrap;
@@ -332,22 +333,15 @@
   .post-box {
     display: flex;
     flex-direction: column;
-   
+
   }
 
   .post__item--left,
   .post__item--right {
-   display: none;
+    display: none;
   }
 
   .post-box__info {
     padding: 2%;
   }
 }
-
-
-
-
-
-
-

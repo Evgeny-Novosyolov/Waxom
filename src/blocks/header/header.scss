@@ -309,6 +309,11 @@
 }
 
 @media screen and (max-width:720px) {
+  .menu {
+    order: -1;
+    min-width: 1.5em;
+    margin-right: 0;
+  }
   .header-box__text {
     width: 50%;
   }
